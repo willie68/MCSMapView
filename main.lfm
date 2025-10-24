@@ -1,0 +1,140 @@
+object frmmain: Tfrmmain
+  Left = 350
+  Height = 494
+  Top = 250
+  Width = 716
+  Caption = 'MCS Mapview'
+  ClientHeight = 494
+  ClientWidth = 716
+  Position = poDefault
+  SessionProperties = 'Height;Left;Top;Width'
+  ShowHint = True
+  OnCreate = FormCreate
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 471
+    Width = 716
+    Panels = <>
+  end
+  object MapView1: TMapView
+    Left = 0
+    Height = 439
+    Top = 32
+    Width = 716
+    Align = alClient
+    CacheOnDisk = False
+    DownloadEngine = MapView1.BuiltInDLE
+    DrawingEngine = MapView1.BuiltInDE
+    Layers = <>
+    MapProvider = 'Google Maps'
+    PluginManager = MvPluginManager1
+    POITextBgOpacity = 0.550000011920929
+    TabOrder = 1
+  end
+  object ToolBar1: TToolBar
+    Left = 0
+    Top = 0
+    Width = 716
+    Anchors = []
+    AutoSize = True
+    ButtonHeight = 32
+    ButtonWidth = 32
+    Caption = 'ToolBar1'
+    EdgeBorders = []
+    Images = ImageList1
+    TabOrder = 2
+    object ToolButton1: TToolButton
+      Left = 1
+      Hint = 'Close Mapview'
+      Top = 0
+      Caption = 'ToolButton1'
+      ImageIndex = 0
+      OnClick = ToolButton1Click
+    end
+    object cbProvider: TComboBox
+      Left = 81
+      Height = 23
+      Top = 0
+      Width = 140
+      AutoSize = False
+      BorderSpacing.Left = 22
+      BorderSpacing.Top = 12
+      ItemHeight = 15
+      ReadOnly = True
+      Sorted = True
+      Style = csDropDownList
+      TabOrder = 0
+      OnChange = cbProviderChange
+    end
+    object ToolButton2: TToolButton
+      Left = 73
+      Height = 32
+      Top = 0
+      Caption = 'ToolButton2'
+      Style = tbsSeparator
+    end
+    object ccbOverlays: TCheckComboBox
+      Left = 221
+      Height = 24
+      Top = 0
+      Width = 143
+      ItemHeight = 16
+      TabOrder = 1
+      OnItemChange = ccbOverlaysItemChange
+    end
+    object ToolButton3: TToolButton
+      Left = 37
+      Hint = 'Clear Tile Cache'
+      Top = 0
+      Caption = 'Clearcache'
+      ImageIndex = 1
+      OnClick = ToolButton3Click
+    end
+  end
+  object MvPluginManager1: TMvPluginManager
+    Left = 157
+    Top = 203
+    object MvPluginManager1LegalNoticePlugin1: TLegalNoticePlugin
+    end
+  end
+  object JSONPropStorage1: TJSONPropStorage
+    StoredValues = <>
+    JSONFileName = 'mcsmapview'
+    Formatted = False
+    Left = 544
+    Top = 344
+  end
+  object ImageList1: TImageList
+    Height = 32
+    Width = 32
+    Left = 375
+    Top = 164
+    Bitmap = {
+      4C7A020000002000000020000000D80200000000000078DAED98CB4F1B311087
+      77370F2909B40AA04420C281B66A5008824BDBE4009C1042E2C00501171E570E
+      10C49140FE73B7DFA2485E671FB6E3256D95C348963DFE7DCE643CB677343AF4
+      46167679B92D1616CAA1D11E59EAD81A5CCFF342A3FDD1FC317B6C737E7EAC8B
+      8BC9FCCAE2C7CD31B5C1A0273637EBB1FA597CFA988B860DFBEE6E4F54ABA554
+      FD2C3E86065A26EC9B9B5D512A055AFA3AE368DDDEEE6AADE1E1E1A7A8548AC2
+      445F671C4DB4D3D86F6F87A2D5FA1C99E7FB9E383AFA62CC670E73651FB46124
+      F1CFCEDA13BF3B8EADBBFF98ABFAC148FAEDCBCBD588EFD6D68A9876FFA321FB
+      C1888B01F921FB150A41EADED1E5A38196EC1B978BFD7E2BE2D3ED3685ABF307
+      2D591B96EAB3B111CDBBF3F38E7075FEA2256BC3527D6AB572C46730F8E5ACA6
+      A3256BC3527D82C08FF8BCBE1E38E3A3256BC3CAE20F87FBCEF86865F1D5F83F
+      3EBA8B3F5A59F157EB5E56FE99989A7FB0549F5E2FBAFF76769ACEF868C9DAB0
+      549FEBEB68FD291603F1F4D49B7A0D68A0256BC38AABBF4B4B95885FA7D3989A
+      8F86AC0923E90C3A3DFD3E715E9C9C7CB35E0373553D1869FB74757551397F7D
+      AB353087B9B216DA5975E5FEFE8728970B13EB268E3AF9808F1A730C4DB475D6
+      7E75D5FD7366F9131AE411B9CC7E624F0F8707A1D1A68F3135D7DECF525FA069
+      123FFCE3E2606A6898B2E5FF42CD071363AE6ECCD372929CADD72BDA5C7C99E3
+      F20C63CF5237A85DD44F6A38E708469B3EC6F049BB634E6B2F2FFBE2F8F8AB58
+      5B5B0C730DA34D1F6379BE03D95B8D462D31EE8CB9A8D949BF3B8D3DB666B396
+      4B1C88AF6EFEE1EB9ACF7F2C33DAED15F1FCDC0F8DB63C86AF6BBE5AD7E08EC7
+      68AB75D2E61B837CA7CFCB60C47D9BF80876DA7B65D6FC59C73FAFEF5AA67A73
+      FEDFCD5F5FFF2430DD7ED77CDBFE397FCE9FF3FF7DFEACEBCFFF5EFFD3EE99A6
+      66732F4DBA67DBB06DEEE526EF0C53D37997E8BEB34CCDE45D96F5CE34359B77
+      A9FACE3665EABECB7F036FF1B168
+    }
+  end
+end
