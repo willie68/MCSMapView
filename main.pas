@@ -32,6 +32,7 @@ type
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure JSONPropStorage1RestoreProperties(Sender: TObject);
+    procedure MapView1ZoomChange(Sender: TObject);
     procedure ToolButton1Click(Sender: TObject);
     procedure ToolButton3Click(Sender: TObject);
   private
@@ -99,7 +100,7 @@ begin
   if not (mapName = '') then
   begin
     legal := '';
-    if LazStartsStr('OpenStreet', mapName) then
+    if LazStartsStr('OpenStreet', mapName) OR LazStartsStr('OpenSea', mapName) then
     begin
       legal :=
         'Map data from [https://www.openstreetmap.org/copyright OpenStreetMap and contributors]';
@@ -110,7 +111,7 @@ begin
     end;
     MvPluginManager1LegalNoticePlugin1.LegalNotice := legal;
     MapView1.Active := True;
-    GermanyCenter();
+    //GermanyCenter();
   end;
 end;
 
@@ -146,7 +147,7 @@ begin
   for i := 0 to Provider.Count - 1 do
   begin
     mapName := Provider.Strings[i];
-    if LazStartsStr('OpenStreet', mapName) or LazStartsStr('Google Maps', mapName) then
+    if LazStartsStr('OpenStreet', mapName) or LazStartsStr('OpenSeaMap Adria', mapName) or LazStartsStr('Google Maps', mapName) then
       cbProvider.Items.Add(mapName);
   end;
   cbProvider.ItemIndex := 0;
@@ -165,6 +166,11 @@ end;
 procedure Tfrmmain.JSONPropStorage1RestoreProperties(Sender: TObject);
 begin
 
+end;
+
+procedure Tfrmmain.MapView1ZoomChange(Sender: TObject);
+begin
+  StatusBar1.Panels[2].Text:= IntToStr(MapView1.Zoom);
 end;
 
 procedure Tfrmmain.ToolButton1Click(Sender: TObject);
@@ -195,6 +201,9 @@ begin
     'https://t1.openseamap.org/habour/%z%/%x%/%y%.png', 0, 19, 3, @GetSvrLetter);
   RegisterMapProvider('OpenSeaMap Gebco', ptEPSG3857,
     'http://localhost:8580/tileserver/gebco/xyz/%z%/%x%/%y%.png', 0,
+    19, 3, @GetSvrLetter);
+  RegisterMapProvider('OpenSeaMap Adria', ptEPSG3857,
+    'http://localhost:8580/tileserver/adria/xyz/%z%/%x%/%y%.png', 0,
     19, 3, @GetSvrLetter);
   RegisterMapProvider('OpenStreetMap Germany', ptEPSG3857,
     'http://localhost:8580/tileserver/osmde/xyz/%z%/%x%/%y%.png', 0,

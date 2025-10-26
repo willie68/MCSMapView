@@ -9,7 +9,6 @@ object frmmain: Tfrmmain
   Position = poDefault
   SessionProperties = 'Height;Left;Top;Width'
   ShowHint = True
-  LCLVersion = '4.2.0.0'
   OnCreate = FormCreate
   OnDestroy = FormDestroy
   object StatusBar1: TStatusBar
@@ -17,7 +16,17 @@ object frmmain: Tfrmmain
     Height = 23
     Top = 471
     Width = 716
-    Panels = <>
+    Panels = <    
+      item
+        Width = 200
+      end    
+      item
+        Width = 200
+      end    
+      item
+        Width = 200
+      end>
+    SimplePanel = False
   end
   object MapView1: TMapView
     Left = 0
@@ -33,6 +42,7 @@ object frmmain: Tfrmmain
     PluginManager = MvPluginManager1
     POITextBgOpacity = 0.550000011920929
     TabOrder = 1
+    OnZoomChange = MapView1ZoomChange
   end
   object ToolBar1: TToolBar
     Left = 0
@@ -71,7 +81,7 @@ object frmmain: Tfrmmain
     end
     object ToolButton2: TToolButton
       Left = 73
-      Height = 8
+      Height = 32
       Top = 0
       Caption = 'ToolButton2'
       Style = tbsSeparator

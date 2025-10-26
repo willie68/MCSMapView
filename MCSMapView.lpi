@@ -96,6 +96,9 @@
       <Item>
         <Name Value="EFOpenError"/>
       </Item>
+      <Item>
+        <Name Value="EInvalidGraphic"/>
+      </Item>
     </Exceptions>
   </Debugging>
 </CONFIG>
