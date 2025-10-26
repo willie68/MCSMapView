@@ -7,7 +7,7 @@ interface
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ComCtrls, Buttons,
   StdCtrls, JSONPropStorage, ExtCtrls, ComboEx, mvMapViewer, mvTypes,
-  mvMapProvider, mvPluginCommon, mvPlugins;
+  mvMapProvider, mvPluginCommon, mvPlugins, uMapProviderConfigList, uMapProviderConfig;
 
 type
 
@@ -30,9 +30,13 @@ type
     procedure ccbOverlaysItemChange(Sender: TObject; AIndex: integer);
     procedure CoolBar1Change(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure FormDestroy(Sender: TObject);
+    procedure JSONPropStorage1RestoreProperties(Sender: TObject);
     procedure ToolButton1Click(Sender: TObject);
     procedure ToolButton3Click(Sender: TObject);
   private
+    FProviderConfigs: TMapProviderConfigList;
+
     FDepthlayer: TMapLayer;
     FSeamarkslayer: TMapLayer;
     FHabourlayer: TMapLayer;
@@ -115,9 +119,26 @@ var
   provider: TStringList;
   i: integer;
   mapname: string;
+  cfg : TMapProviderConfig;
 begin
   MapView1.Align := alClient;
   PopulateLayers();
+
+  FProviderConfigs := TMapProviderConfigList.Create(JSONPropStorage1);
+
+  // Optional: Standardkonfigurationen hinzufügen, falls Liste leer
+  if FProviderConfigs.Count = 0 then
+  begin
+    cfg := TMapProviderConfig.Create;
+    cfg.Name := 'OpenStreetMap';
+    cfg.Description := 'Standard OpenStreetMap tiles';
+    cfg.URL := 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
+    cfg.DisplayType := dtOpaque;
+    FProviderConfigs.Add(cfg);
+
+    // Speichern der Standardkonfiguration
+    FProviderConfigs.SaveToStorage;
+  end;
 
   provider := TStringList.Create();
   MapProvidersToSortedStrings(provider);
@@ -134,6 +155,16 @@ begin
   Provider.Free();
 
   GermanyCenter();
+end;
+
+procedure Tfrmmain.FormDestroy(Sender: TObject);
+begin
+   FProviderConfigs.Free;
+end;
+
+procedure Tfrmmain.JSONPropStorage1RestoreProperties(Sender: TObject);
+begin
+
 end;
 
 procedure Tfrmmain.ToolButton1Click(Sender: TObject);

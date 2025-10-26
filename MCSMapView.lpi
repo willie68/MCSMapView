@@ -51,6 +51,15 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit>
+      <Unit>
+        <Filename Value="uMapProviderConfig.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="umapproviderconfiglist.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uMapProviderConfigList"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

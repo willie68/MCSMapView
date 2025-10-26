@@ -1,4 +1,4 @@
-unit MapProviderConfig;
+unit uMapProviderConfig;
 
 {$mode objfpc}{$H+}
 
@@ -120,6 +120,7 @@ class function TMapProviderConfig.FromJSONObject(AObj: TJSONObject): TMapProvide
 var
   cfg: TMapProviderConfig;
   v: TJSONData;
+  tmp : integer;
 begin
   if AObj = nil then
     raise Exception.Create('FromJSONObject: AObj = nil');
@@ -157,7 +158,7 @@ begin
     // Sanity check: if min > max, swap
     if cfg.FMinZoom > cfg.FMaxZoom then
     begin
-      var tmp := cfg.FMinZoom;
+      tmp := cfg.FMinZoom;
       cfg.FMinZoom := cfg.FMaxZoom;
       cfg.FMaxZoom := tmp;
     end;
@@ -183,4 +184,6 @@ begin
   finally
     jsonData.Free;
   end;
+end;
+
 end.

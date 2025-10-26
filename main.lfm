@@ -9,7 +9,9 @@ object frmmain: Tfrmmain
   Position = poDefault
   SessionProperties = 'Height;Left;Top;Width'
   ShowHint = True
+  LCLVersion = '4.2.0.0'
   OnCreate = FormCreate
+  OnDestroy = FormDestroy
   object StatusBar1: TStatusBar
     Left = 0
     Height = 23
@@ -69,14 +71,14 @@ object frmmain: Tfrmmain
     end
     object ToolButton2: TToolButton
       Left = 73
-      Height = 32
+      Height = 8
       Top = 0
       Caption = 'ToolButton2'
       Style = tbsSeparator
     end
     object ccbOverlays: TCheckComboBox
       Left = 221
-      Height = 24
+      Height = 22
       Top = 0
       Width = 143
       ItemHeight = 16
@@ -93,8 +95,8 @@ object frmmain: Tfrmmain
     end
   end
   object MvPluginManager1: TMvPluginManager
-    Left = 157
-    Top = 203
+    Left = 432
+    Top = 344
     object MvPluginManager1LegalNoticePlugin1: TLegalNoticePlugin
     end
   end
@@ -102,14 +104,15 @@ object frmmain: Tfrmmain
     StoredValues = <>
     JSONFileName = 'mcsmapview'
     Formatted = False
+    OnRestoreProperties = JSONPropStorage1RestoreProperties
     Left = 544
     Top = 344
   end
   object ImageList1: TImageList
     Height = 32
     Width = 32
-    Left = 375
-    Top = 164
+    Left = 312
+    Top = 344
     Bitmap = {
       4C7A020000002000000020000000D80200000000000078DAED98CB4F1B311087
       77370F2909B40AA04420C281B66A5008824BDBE4009C1042E2C00501171E570E

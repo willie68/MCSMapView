@@ -8,9 +8,9 @@
       <Unit>
         <Filename Value="MCSMapView.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="5"/>
-        <CursorPos Y="18"/>
-        <UsageCount Value="25"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="9" Y="22"/>
+        <UsageCount Value="41"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -20,159 +20,92 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="163"/>
-        <CursorPos X="40" Y="180"/>
-        <UsageCount Value="25"/>
+        <TopLine Value="121"/>
+        <CursorPos X="24" Y="151"/>
+        <UsageCount Value="41"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
+        <Filename Value="uprovider.pas"/>
+        <UnitName Value="MapProviderConfig"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="24"/>
+        <UsageCount Value="23"/>
+      </Unit>
+      <Unit>
         <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvmapprovider.pas"/>
         <UnitName Value="mvMapProvider"/>
-        <EditorIndex Value="7"/>
-        <TopLine Value="81"/>
-        <CursorPos X="11" Y="96"/>
-        <UsageCount Value="13"/>
-        <Loaded Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="488"/>
+        <CursorPos X="58" Y="513"/>
+        <UsageCount Value="12"/>
       </Unit>
       <Unit>
         <Filename Value="D:\Sprachen\pascal\lazarus\components\lazutils\lazstringutils.pas"/>
         <UnitName Value="LazStringUtils"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="110"/>
         <CursorPos Y="132"/>
-        <UsageCount Value="13"/>
-        <Loaded Value="True"/>
+        <UsageCount Value="12"/>
       </Unit>
       <Unit>
         <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvmapviewer.pas"/>
         <UnitName Value="mvMapViewer"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="3331"/>
         <CursorPos X="9" Y="3346"/>
-        <UsageCount Value="12"/>
-        <Loaded Value="True"/>
+        <UsageCount Value="11"/>
       </Unit>
       <Unit>
         <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvengine.pas"/>
         <UnitName Value="mvEngine"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="434"/>
         <CursorPos X="3" Y="436"/>
-        <UsageCount Value="12"/>
-        <Loaded Value="True"/>
+        <UsageCount Value="11"/>
       </Unit>
       <Unit>
         <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvcache.pas"/>
         <UnitName Value="mvCache"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="267"/>
         <CursorPos X="25" Y="278"/>
-        <UsageCount Value="12"/>
-        <Loaded Value="True"/>
+        <UsageCount Value="11"/>
       </Unit>
       <Unit>
         <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvdrawingengine.pas"/>
         <UnitName Value="mvDrawingEngine"/>
-        <EditorIndex Value="1"/>
-        <CursorPos X="42" Y="24"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="10"/>
+        <CursorPos X="27" Y="24"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="MapProviderConfig.pas"/>
+        <EditorIndex Value="-1"/>
         <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uMapProviderConfig.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="159"/>
+        <CursorPos Y="189"/>
+        <UsageCount Value="32"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="umapproviderconfiglist.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uMapProviderConfigList"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="60" Y="8"/>
+        <UsageCount Value="32"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvcache.pas"/>
-        <Caret Line="261" TopLine="248"/>
-      </Position>
-      <Position>
-        <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvcache.pas"/>
-        <Caret Line="265" TopLine="248"/>
-      </Position>
-      <Position>
-        <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvcache.pas"/>
-        <Caret Line="266" TopLine="248"/>
-      </Position>
-      <Position>
-        <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvcache.pas"/>
-        <Caret Line="267" TopLine="248"/>
-      </Position>
-      <Position>
-        <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvengine.pas"/>
-        <Caret Line="436" Column="7" TopLine="419"/>
-      </Position>
-      <Position>
-        <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvcache.pas"/>
-        <Caret Line="82" Column="60" TopLine="58"/>
-      </Position>
-      <Position>
-        <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvcache.pas"/>
-        <Caret Line="288" Column="13" TopLine="273"/>
-      </Position>
-      <Position>
-        <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvcache.pas"/>
-        <Caret Line="422" Column="13" TopLine="408"/>
-      </Position>
-      <Position>
-        <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvcache.pas"/>
-        <Caret Line="496" Column="15" TopLine="477"/>
-      </Position>
-      <Position>
-        <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvcache.pas"/>
-        <Caret Line="50" Column="14" TopLine="34"/>
-      </Position>
-      <Position>
-        <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvcache.pas"/>
-        <Caret Line="82" Column="60" TopLine="58"/>
-      </Position>
-      <Position>
-        <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvcache.pas"/>
-        <Caret Line="290" Column="29" TopLine="283"/>
-      </Position>
-      <Position>
-        <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvcache.pas"/>
-        <Caret Line="306" Column="29" TopLine="293"/>
-      </Position>
-      <Position>
-        <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvcache.pas"/>
-        <Caret Line="426" Column="27" TopLine="401"/>
-      </Position>
-      <Position>
-        <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvcache.pas"/>
-        <Caret Line="588" Column="18" TopLine="569"/>
-      </Position>
-      <Position>
-        <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvcache.pas"/>
-        <Caret Line="49" Column="15" TopLine="33"/>
-      </Position>
-      <Position>
-        <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvcache.pas"/>
-        <Caret Line="77" Column="62" TopLine="53"/>
-      </Position>
-      <Position>
-        <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvcache.pas"/>
-        <Caret Line="290" Column="29" TopLine="265"/>
-      </Position>
-      <Position>
-        <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvcache.pas"/>
-        <Caret Line="306" Column="29" TopLine="291"/>
-      </Position>
-      <Position>
-        <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvcache.pas"/>
-        <Caret Line="426" Column="27" TopLine="401"/>
-      </Position>
-      <Position>
-        <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvcache.pas"/>
-        <Caret Line="588" Column="18" TopLine="563"/>
-      </Position>
-      <Position>
-        <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvcache.pas"/>
-        <Caret Line="49" Column="15" TopLine="33"/>
-      </Position>
-      <Position>
-        <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvcache.pas"/>
-        <Caret Line="77" Column="62" TopLine="53"/>
-      </Position>
+    <JumpHistory HistoryIndex="20">
       <Position>
         <Filename Value="main.pas"/>
         <Caret Line="144" Column="11" TopLine="131"/>
@@ -182,24 +115,80 @@
         <Caret Line="145" TopLine="131"/>
       </Position>
       <Position>
-        <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvengine.pas"/>
-        <Caret Line="159" Column="17" TopLine="146"/>
-      </Position>
-      <Position>
-        <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvengine.pas"/>
-        <Caret Line="436" Column="3" TopLine="433"/>
-      </Position>
-      <Position>
-        <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvcache.pas"/>
-        <Caret Line="71" Column="16" TopLine="57"/>
-      </Position>
-      <Position>
         <Filename Value="main.pas"/>
         <Caret Line="169" Column="44" TopLine="152"/>
       </Position>
       <Position>
         <Filename Value="main.pas"/>
         <Caret Line="180" Column="37" TopLine="157"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="179" Column="14" TopLine="169"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="164" Column="40" TopLine="148"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="143" Column="33" TopLine="114"/>
+      </Position>
+      <Position>
+        <Filename Value="umapproviderconfiglist.pas"/>
+        <Caret Column="28"/>
+      </Position>
+      <Position>
+        <Filename Value="uMapProviderConfig.pas"/>
+        <Caret Line="123" Column="17" TopLine="146"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="32" Column="21" TopLine="30"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="131" Column="26" TopLine="115"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="130" Column="5" TopLine="115"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="165" Column="5" TopLine="136"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="162" Column="26" TopLine="136"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="10" Column="87"/>
+      </Position>
+      <Position>
+        <Filename Value="umapproviderconfiglist.pas"/>
+        <Caret Line="8" Column="60"/>
+      </Position>
+      <Position>
+        <Filename Value="uMapProviderConfig.pas"/>
+        <Caret Line="188" TopLine="158"/>
+      </Position>
+      <Position>
+        <Filename Value="uMapProviderConfig.pas"/>
+        <Caret Line="189" TopLine="159"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="127" Column="69" TopLine="112"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="151" Column="24" TopLine="136"/>
+      </Position>
+      <Position>
+        <Filename Value="MCSMapView.lpr"/>
+        <Caret Line="14" Column="52"/>
       </Position>
     </JumpHistory>
     <RunParams>
