@@ -1,0 +1,211 @@
+object frmProvider: TfrmProvider
+  Left = 354
+  Height = 382
+  Top = 250
+  Width = 464
+  BorderStyle = bsDialog
+  Caption = 'Provider'
+  ClientHeight = 382
+  ClientWidth = 464
+  Position = poMainFormCenter
+  object Panel1: TPanel
+    Left = 0
+    Height = 46
+    Top = 336
+    Width = 464
+    Align = alBottom
+    ClientHeight = 46
+    ClientWidth = 464
+    TabOrder = 0
+    object BitBtn1: TBitBtn
+      Left = 350
+      Height = 30
+      Top = 8
+      Width = 100
+      Anchors = [akTop, akRight]
+      Cancel = True
+      DefaultCaption = True
+      Kind = bkCancel
+      ModalResult = 2
+      TabOrder = 0
+    end
+    object btnOK: TBitBtn
+      Left = 246
+      Height = 30
+      Top = 8
+      Width = 100
+      Anchors = [akTop, akRight]
+      Default = True
+      DefaultCaption = True
+      Kind = bkOK
+      ModalResult = 1
+      TabOrder = 1
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 336
+    Top = 0
+    Width = 178
+    Align = alLeft
+    Caption = 'Panel2'
+    ClientHeight = 336
+    ClientWidth = 178
+    TabOrder = 1
+    object ToolBar1: TToolBar
+      Left = 1
+      Height = 34
+      Top = 1
+      Width = 176
+      ButtonHeight = 32
+      ButtonWidth = 32
+      Caption = 'ToolBar1'
+      Images = ImageList1
+      TabOrder = 0
+      object ToolButton1: TToolButton
+        Left = 1
+        Top = 2
+        Caption = 'Add'
+        ImageIndex = 0
+      end
+      object ToolButton2: TToolButton
+        Left = 37
+        Top = 2
+        Caption = 'ToolButton2'
+        ImageIndex = 1
+      end
+    end
+    object ListBox1: TListBox
+      Left = 1
+      Height = 300
+      Top = 35
+      Width = 176
+      Align = alClient
+      ItemHeight = 0
+      TabOrder = 1
+    end
+  end
+  object Panel3: TPanel
+    Left = 183
+    Height = 336
+    Top = 0
+    Width = 281
+    Align = alClient
+    ClientHeight = 336
+    ClientWidth = 281
+    TabOrder = 2
+    object ledName: TLabeledEdit
+      Left = 80
+      Height = 23
+      Top = 35
+      Width = 192
+      EditLabel.Height = 23
+      EditLabel.Width = 32
+      EditLabel.Caption = 'Name'
+      LabelPosition = lpLeft
+      LabelSpacing = 8
+      TabOrder = 0
+      Text = 'ledName'
+    end
+    object ledURL: TLabeledEdit
+      Left = 80
+      Height = 23
+      Top = 67
+      Width = 192
+      EditLabel.Height = 23
+      EditLabel.Width = 21
+      EditLabel.Caption = 'URL'
+      LabelPosition = lpLeft
+      LabelSpacing = 8
+      TabOrder = 1
+      Text = 'ledURL'
+    end
+    object speZoomMin: TSpinEdit
+      Left = 80
+      Height = 23
+      Top = 99
+      Width = 74
+      MaxValue = 20
+      TabOrder = 2
+    end
+    object speZoomMax: TSpinEdit
+      Left = 198
+      Height = 23
+      Top = 99
+      Width = 74
+      MaxValue = 20
+      TabOrder = 3
+    end
+    object Label1: TLabel
+      Left = 40
+      Height = 15
+      Top = 103
+      Width = 32
+      Caption = 'Zoom'
+    end
+    object Label2: TLabel
+      Left = 21
+      Height = 15
+      Top = 133
+      Width = 51
+      Caption = 'Drawstyle'
+    end
+    object rbOpaque: TRadioButton
+      Left = 80
+      Height = 19
+      Top = 131
+      Width = 60
+      Caption = 'Opaque'
+      TabOrder = 4
+    end
+    object rbAlpha: TRadioButton
+      Left = 152
+      Height = 19
+      Top = 131
+      Width = 49
+      Caption = 'Alpha'
+      TabOrder = 5
+    end
+    object rbDraw: TRadioButton
+      Left = 216
+      Height = 19
+      Top = 131
+      Width = 45
+      Caption = 'Draw'
+      TabOrder = 6
+    end
+  end
+  object Splitter1: TSplitter
+    Left = 178
+    Height = 336
+    Top = 0
+    Width = 5
+  end
+  object ImageList1: TImageList
+    Height = 32
+    Width = 32
+    Left = 64
+    Top = 208
+    Bitmap = {
+      4C7A020000002000000020000000420200000000000078DAED57C16A023110DD
+      2E5AC45AB41745C11E3C966E415B90155BFD073DE8C1F39EF4A05E54D0FDF329
+      6F2110A6D164775DB2D03D0C8464665E329999E485E1D4090DE47018D36CF646
+      83419B3A9D67AA56CBE4BA0F91608C39AC4107BAA1A15F9DACD743EAF7DB542E
+      BBE4388E91401736B04D8A7B3AFDD068D48DCE678ACB05B6F0015F71B0379B21
+      359B4F8971B9C0177C9A6007C157749F2A3F8D4685C6E3575AAD3E68B7F3E97C
+      9E448231E6B0061D952D7CC2B7EEDC2AEC7ABD12E5D5E532D19E013AD0858D6A
+      0FD7E2803B52C5DCF39A743C7EC7CE23D8C0567517AA7C409E705DDFEFA6AE23
+      F8E07E81C56B8CE7B9E7B56E622F97EF54AB3D4682F12D5DF8E27521D7266A95
+      DFB72EE6C015FA18EBEE82E70330455FE3BD05F9A38B2B8FA94E1F3E798F123D
+      95D798499EC7C5874F5E9BA29FCB73A86193BC8A8B0F816FD946BC25F21CFA48
+      56F8F02DDB88774C9EDB6E7D52E579DC9EABAA0BF8E6FD88D71DFAE9B53C4FB2
+      07D9177CF33AB48DAF8BFF62913CFEB0D5C5DF76FED9AE3FDBFDC776FFB5FDFE
+      247D7F455DA8F23CEEFB6BFBFF9187FF97EDFF671EFEDF79E01F79E05F79E09F
+      79E1DF05FF2FF87FC1FF0BFE9F46EEC1FF71AF41F049FBFDE8EABEB0061D9E27
+      69F93FFCF57A2FD15AA9E4D27CFEF77F8A39AC4107BA7C0F69F83FCEC4E327EF
+      01637E7FB0B917FF475CC5D9F81E54D8D055DD531AFEAFC251F1571E9BB4FC5F
+      B70753ECA4FCDF740F3AECA4FC3F6B7CDBF1B79D7FB6EBCF76FFC9AEFF4EE99E
+      FC3FABF7270FEF6FC1FF0BFE5FF0FFFFC9FF7F01D57B154C
+    }
+  end
+end

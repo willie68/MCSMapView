@@ -60,6 +60,13 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uMapProviderConfigList"/>
       </Unit>
+      <Unit>
+        <Filename Value="ufrmprovider.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmProvider"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ufrmProvider"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

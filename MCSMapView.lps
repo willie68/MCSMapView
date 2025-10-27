@@ -8,10 +8,9 @@
       <Unit>
         <Filename Value="MCSMapView.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="5"/>
         <CursorPos Y="18"/>
-        <UsageCount Value="42"/>
+        <UsageCount Value="43"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -20,28 +19,28 @@
         <ComponentName Value="frmmain"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <TopLine Value="171"/>
-        <CursorPos X="53" Y="173"/>
-        <UsageCount Value="42"/>
+        <TopLine Value="219"/>
+        <CursorPos X="39" Y="235"/>
+        <UsageCount Value="43"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="uMapProviderConfig.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="7"/>
         <TopLine Value="159"/>
         <CursorPos Y="189"/>
-        <UsageCount Value="33"/>
+        <UsageCount Value="34"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="umapproviderconfiglist.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uMapProviderConfigList"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="6"/>
         <CursorPos X="60" Y="8"/>
-        <UsageCount Value="33"/>
+        <UsageCount Value="34"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -54,10 +53,11 @@
       <Unit>
         <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvmapprovider.pas"/>
         <UnitName Value="mvMapProvider"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="488"/>
-        <CursorPos X="58" Y="513"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="86"/>
+        <CursorPos X="10" Y="101"/>
         <UsageCount Value="12"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="D:\Sprachen\pascal\lazarus\components\lazutils\lazstringutils.pas"/>
@@ -94,10 +94,11 @@
       <Unit>
         <Filename Value="..\Lazarus_Libraries\mapviewer\source\mvdrawingengine.pas"/>
         <UnitName Value="mvDrawingEngine"/>
-        <EditorIndex Value="-1"/>
+        <EditorIndex Value="1"/>
         <TopLine Value="10"/>
-        <CursorPos X="27" Y="24"/>
+        <CursorPos X="23" Y="24"/>
         <UsageCount Value="10"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="MapProviderConfig.pas"/>
@@ -107,62 +108,26 @@
       <Unit>
         <Filename Value="..\Lazarus_Libraries\mapviewer\source\addons\plugins\markers\mvmarkerplugins.pas"/>
         <UnitName Value="mvMarkerPlugins"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="4"/>
         <TopLine Value="152"/>
         <CursorPos X="21" Y="220"/>
         <UsageCount Value="11"/>
         <Loaded Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="ufrmprovider.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmProvider"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ufrmProvider"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="179" Column="14" TopLine="169"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="164" Column="40" TopLine="148"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="143" Column="33" TopLine="114"/>
-      </Position>
-      <Position>
-        <Filename Value="umapproviderconfiglist.pas"/>
-        <Caret Column="28"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="32" Column="21" TopLine="30"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="131" Column="26" TopLine="115"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="130" Column="5" TopLine="115"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="165" Column="5" TopLine="136"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="162" Column="26" TopLine="136"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="10" Column="87"/>
-      </Position>
-      <Position>
-        <Filename Value="umapproviderconfiglist.pas"/>
-        <Caret Line="8" Column="60"/>
-      </Position>
-      <Position>
-        <Filename Value="uMapProviderConfig.pas"/>
-        <Caret Line="188" TopLine="158"/>
-      </Position>
+    <JumpHistory HistoryIndex="26">
       <Position>
         <Filename Value="uMapProviderConfig.pas"/>
         <Caret Line="189" TopLine="159"/>
@@ -234,6 +199,39 @@
       <Position>
         <Filename Value="main.pas"/>
         <Caret Line="173" Column="53" TopLine="171"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="172" Column="66" TopLine="156"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="174" Column="66" TopLine="158"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="190" Column="30" TopLine="188"/>
+      </Position>
+      <Position>
+        <Filename Value="ufrmprovider.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="49" Column="23" TopLine="45"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="209" Column="72" TopLine="204"/>
+      </Position>
+      <Position>
+        <Filename Value="ufrmprovider.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="235" Column="39" TopLine="219"/>
+      </Position>
+      <Position>
+        <Filename Value="ufrmprovider.pas"/>
       </Position>
     </JumpHistory>
     <RunParams>

@@ -11,7 +11,7 @@ uses
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
   Forms,
-  main, uMapProviderConfig, uMapProviderConfigList;
+  main, uMapProviderConfig, uMapProviderConfigList, ufrmProvider;
 
   {$R *.res}
 
@@ -24,5 +24,6 @@ begin
   {$POP}
   Application.Initialize;
   Application.CreateForm(Tfrmmain, frmmain);
+  Application.CreateForm(TfrmProvider, frmProvider);
   Application.Run;
 end.

@@ -26,6 +26,7 @@ type
     ToolButton1: TToolButton;
     ToolButton2: TToolButton;
     ToolButton3: TToolButton;
+    ToolButton4: TToolButton;
     procedure cbProviderChange(Sender: TObject);
     procedure ccbOverlaysItemChange(Sender: TObject; AIndex: integer);
     procedure CoolBar1Change(Sender: TObject);
@@ -35,6 +36,7 @@ type
     procedure MapView1ZoomChange(Sender: TObject);
     procedure ToolButton1Click(Sender: TObject);
     procedure ToolButton3Click(Sender: TObject);
+    procedure ToolButton4Click(Sender: TObject);
   private
     FProviderConfigs: TMapProviderConfigList;
 
@@ -55,7 +57,7 @@ var
 
 implementation
 
-uses mvDrawingEngine, LazStringUtils;
+uses mvDrawingEngine, LazStringUtils, ufrmProvider;
   {$R *.lfm}
 
   { Tfrmmain }
@@ -170,7 +172,7 @@ end;
 
 procedure Tfrmmain.MapView1ZoomChange(Sender: TObject);
 begin
-  StatusBar1.Panels[2].Text:= IntToStr(MapView1.Zoom);
+  StatusBar1.Panels[2].Text:= 'Zoom:' + IntToStr(MapView1.Zoom);
 end;
 
 procedure Tfrmmain.ToolButton1Click(Sender: TObject);
@@ -181,6 +183,14 @@ end;
 procedure Tfrmmain.ToolButton3Click(Sender: TObject);
 begin
   MapView1.Engine.ClearCache;
+end;
+
+procedure Tfrmmain.ToolButton4Click(Sender: TObject);
+begin
+  if frmProvider.ShowModal() = mrOK then
+  begin
+
+  end;
 end;
 
 procedure Tfrmmain.GermanyCenter();
